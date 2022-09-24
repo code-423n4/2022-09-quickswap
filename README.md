@@ -78,12 +78,12 @@ $ node scripts/deployAll.js <network>
 |[src/core/contracts/AlgebraPool.sol](https://github.com/code-423n4/2022-09-quickswap/blob/main/src/core/contracts/AlgebraPool.sol)|789|100%|
 |[src/core/contracts/AlgebraPoolDeployer.sol](https://github.com/code-423n4/2022-09-quickswap/blob/main/src/core/contracts/AlgebraPoolDeployer.sol)|40|100%|
 |[src/core/contracts/DataStorageOperator.sol](https://github.com/code-423n4/2022-09-quickswap/blob/main/src/core/contracts/DataStorageOperator.sol)|127|96.55%|
-|[src/core/contracts/libraries/AdaptiveFee.sol](https://github.com/code-423n4/2022-09-quickswap/blob/main/src/core/contracts/libraries/AdaptiveFee.soll)|74|97.37%|
-|[src/core/contracts/libraries/DataStorage.sol.sol](https://github.com/code-423n4/2022-09-quickswap/blob/main/src/core/contracts/libraries/DataStorage.sol.soll)|271|94.29%|
+|[src/core/contracts/libraries/AdaptiveFee.sol](https://github.com/code-423n4/2022-09-quickswap/blob/main/src/core/contracts/libraries/AdaptiveFee.sol)|74|97.37%|
+|[src/core/contracts/libraries/DataStorage.sol](https://github.com/code-423n4/2022-09-quickswap/blob/main/src/core/contracts/libraries/DataStorage.sol)|271|94.29%|
 |[src/core/contracts/libraries/PriceMovementMath.sol](https://github.com/code-423n4/2022-09-quickswap/blob/main/src/core/contracts/libraries/PriceMovementMath.sol)|143|98.11%|
 |[src/core/contracts/libraries/TickManager.sol](https://github.com/code-423n4/2022-09-quickswap/blob/main/src/core/contracts/libraries/TickManager.sol)|95|100%|
 |[src/core/contracts/libraries/TickTable.sol](https://github.com/code-423n4/2022-09-quickswap/blob/main/src/core/contracts/libraries/TickTable.sol)|94|100%|
-|[src/core/contracts/libraries/TokenDeltaMath.sol.sol](https://github.com/code-423n4/2022-09-quickswap/blob/main/src/core/contracts/libraries/TokenDeltaMath.sol.sol)|50|100%|
+|[src/core/contracts/libraries/TokenDeltaMath.sol](https://github.com/code-423n4/2022-09-quickswap/blob/main/src/core/contracts/libraries/TokenDeltaMath.sol)|50|100%|
 |_Abstracts (2)_|
 |[src/core/contracts/base/src/PoolImmutables.sol](https://github.com/code-423n4/2022-09-quickswap/blob/main/src/core/contracts/base/src/PoolImmutables.sol)|19|-|
 [src/core/contracts/base/src/PoolState.sol](https://github.com/code-423n4/2022-09-quickswap/blob/main/src/core/contracts/base/src/PoolState.sol)|32|-|
