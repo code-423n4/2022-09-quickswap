@@ -85,8 +85,8 @@ $ node scripts/deployAll.js <network>
 |[src/core/contracts/libraries/TickTable.sol](https://github.com/code-423n4/2022-09-quickswap/blob/main/src/core/contracts/libraries/TickTable.sol)|94|100%|
 |[src/core/contracts/libraries/TokenDeltaMath.sol](https://github.com/code-423n4/2022-09-quickswap/blob/main/src/core/contracts/libraries/TokenDeltaMath.sol)|50|100%|
 |_Abstracts (2)_|
-|[src/core/contracts/base/src/PoolImmutables.sol](https://github.com/code-423n4/2022-09-quickswap/blob/main/src/core/contracts/base/src/PoolImmutables.sol)|19|-|
-[src/core/contracts/base/src/PoolState.sol](https://github.com/code-423n4/2022-09-quickswap/blob/main/src/core/contracts/base/src/PoolState.sol)|32|-|
+|[src/core/contracts/base/PoolImmutables.sol](https://github.com/code-423n4/2022-09-quickswap/blob/main/src/core/contracts/base/PoolImmutables.sol)|19|-|
+[src/core/contracts/base/PoolState.sol](https://github.com/code-423n4/2022-09-quickswap/blob/main/src/core/contracts/base/PoolState.sol)|32|-|
 |Total (over 12 files):|1817|98.86%|
 
 ## Contracts purpose
