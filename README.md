@@ -112,7 +112,7 @@ A contract that constructs a pool must implement this to pass arguments to the p
 This contract is used for interacting with DataStorage library
 ### src/core/contracts/libraries/AdaptiveFee.sol
 Calculates fee based on combination of sigmoids
-### src/core/contracts/libraries/DataStorage.sol.sol
+### src/core/contracts/libraries/DataStorage.sol
 DataStorage provides price, liquidity, volatility data useful for a wide variety of system designs. Mainly used to calculate dynamic fee. Instances of stored dataStorage data, "timepoints", are collected in the dataStorage array Timepoints are overwritten when the full length of the dataStorage array is populated. The most recent timepoint is available by passing 0 to getSingleTimepoint()
 ### src/core/contracts/libraries/PriceMovementMath.sol
 Library that used for computing the result of a swap
