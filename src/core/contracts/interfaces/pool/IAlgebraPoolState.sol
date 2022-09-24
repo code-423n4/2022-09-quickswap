@@ -1,7 +1,9 @@
 // SPDX-License-Identifier: GPL-2.0-or-later
 pragma solidity >=0.5.0;
 
-// @title Pool state that can change
+/// @title Pool state that can change
+/// @dev Credit to Uniswap Labs under GPL-2.0-or-later license:
+/// https://github.com/Uniswap/v3-core/tree/main/contracts/interfaces
 interface IAlgebraPoolState {
   /**
    * @notice The globalState structure in the pool stores many values but requires only one slot
@@ -53,8 +55,8 @@ interface IAlgebraPoolState {
    * @dev This is a public structure, so the `return` natspec tags are omitted.
    * @param tick The tick to look up
    * @return liquidityTotal the total amount of position liquidity that uses the pool either as tick lower or
-   * tick upper
-   * @return liquidityDelta how much liquidity changes when the pool price crosses the tick;
+   * tick upper;
+   * Returns liquidityDelta how much liquidity changes when the pool price crosses the tick;
    * Returns outerFeeGrowth0Token the fee growth on the other side of the tick from the current tick in token0;
    * Returns outerFeeGrowth1Token the fee growth on the other side of the tick from the current tick in token1;
    * Returns outerTickCumulative the cumulative tick value on the other side of the tick from the current tick;
