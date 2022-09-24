@@ -1,6 +1,6 @@
 # Algebra
 
-This directory contains the core smart contracts for the Algebra DEX. For higher level contracts, see the `periphery` directory.
+This directory contains the core smart contracts for the Algebra DEX. For higher level contracts.
 
 ## License
 
