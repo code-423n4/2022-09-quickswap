@@ -17,7 +17,7 @@ Algebra is innovative DEX engine with concentrated liquidity, dynamic fees, farm
 
 Each pool corresponds to two tokens, which can be named `token0` and `token1`, and: `address(token0) < address(token1)`. Then the price can be treated as the ratio of some virtual reserves of these tokens `virtual_reserve_token1 / virtual_reserve_token0`. Discrete price segments are called ticks, which are the logarithm of price to base 1.0001: `price = 1.0001 ^ (tick)`. Liquidity providers can provide liquidity in price ranges determined by the selected top and bottom ticks.
 
-In practice, it is much more convenient to operate with the square root of the price. Therefore, we use square root of price everywhere in smart contracts. To maintain accuracy, the price is presented in the [Q64.96 format](https://en.wikipedia.org/wiki/Q_(number_format)). So you can get the price in human readable form with `(price / 2^96)^2`.
+In practice, it is much more convenient to operate with the square root of the price. Therefore, we use square root of price everywhere in smart contracts. To maintain accuracy, the price is presented in the [Q64.96 format](https://en.wikipedia.org/wiki/Q_(number_format)). So you can get the price in human readable form with `(price / 2^96)^2` (don't forget the decimals).
 
 
 ## Links
