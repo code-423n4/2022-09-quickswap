@@ -15,10 +15,17 @@
 
 Algebra is innovative DEX engine with concentrated liquidity, dynamic fees, farmings and other features. The work of AMM is based on the most common approach with an invariant described by a constant product function ( `x*y = k` like) but with significant changes. By dividing the price interval into segments, users are given the opportunity to place liquidity on a limited range of prices, which allows them to multiply the depth of liquidity and the efficiency of capital use. At the same time, Algebra DEX uses a dynamic fee mechanism - this allows us to respond to changing market conditions and ensure a balance between the interests of traders and liquidity providers.
 
+### Basic design
+
 Each pool corresponds to two tokens, which can be named `token0` and `token1`, and: `address(token0) < address(token1)`. Then the price can be treated as the ratio of some virtual reserves of these tokens `virtual_reserve_token1 / virtual_reserve_token0`. Discrete price segments are called ticks, which are the logarithm of price to base 1.0001: `price = 1.0001 ^ (tick)`. Liquidity providers can provide liquidity in price ranges determined by the selected top and bottom ticks.
 
 In practice, it is much more convenient to operate with the square root of the price. Therefore, we use square root of price everywhere in smart contracts. To maintain accuracy, the price is presented in the [Q64.96 format](https://en.wikipedia.org/wiki/Q_(number_format)). So you can get the price in human readable form with `(price / 2^96)^2` (don't forget the decimals).
 
+With each swap, the price moves in one direction or another, depending on which of the tokens the trader wants to buy and which to sell. If the price crosses the tick border, then liquidity of positions that are now inactive can be removed and liquidity of active positions added. With this approach, we can realize concentrated liquidity: tighter positions add more liquidity and can earn a larger share of fees, but may be more likely to become inactive.
+
+Since a change in price may entail risks and losses for liquidity providers (impermanent loss), we change the current fee value in the pool based on price volatility. You can read more details about this in the [techpaper](https://algebra.finance/static/Algerbra%20Tech%20Paper-15411d15f8653a81d5f7f574bfe655ad.pdf). In short, the commission changes according to function, which is a combination of the sigmoids from volatility and the ratio of volume to liquidity.
+
+Each pool records and stores data that provides the ability to obtain a time-weighted average price, volatility and other values. This functionality is placed in a separate contract (`DataStorageOperator.sol`).
 
 ## Links
 
@@ -117,3 +124,19 @@ Packed tick initialized state library. Stores a packed mapping of tick index to 
 TokenDeltaMath contains the math that uses square root of price as a Q64.96 and liquidity to compute deltas
 
 ## Areas to focus on
+
+### Theft or lock of funds
+
+Is it possible to withdraw tokens or get more than the expected output? Can events occur that make it impossible to withdraw tokens from the pool?
+
+### Built-in oracle manipulation
+
+Is it possible to provoke incorrect values in the `DataStorageOperator.sol`? 
+
+### Calculation correctness
+
+Can there be errors or inaccurate calculations? Could there be overflows or unexpected divisions by zero?
+
+### Unexpected behavior in general
+
+Can the pool be in an invalid state?
