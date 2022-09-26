@@ -46,7 +46,7 @@ Each pool records and stores data that provides the ability to obtain a time-wei
 
 To install dependencies, you need to run the command in the root directory:
 ```
-$ npm run bootstrap
+npm run bootstrap
 ```
 This will download and install dependencies and set up husky hooks.
 
@@ -54,7 +54,7 @@ This will download and install dependencies and set up husky hooks.
 
 To compile, you need to run the following command in the src/core folder:
 ```
-$ npm run compile
+npm run compile
 ```
 
 
@@ -62,7 +62,7 @@ $ npm run compile
 
 Tests are run by the following command in the src/core folder:
 ```
-$ npm run test
+npm run test
 ```
 
 ### Tests coverage
@@ -70,7 +70,7 @@ $ npm run test
 To get a test coverage, you need to run the following command in the src/core folder:
 
 ```
-$ npm run coverage
+npm run coverage
 ```
 
 ### Deploy
@@ -78,7 +78,7 @@ Firstly you need to create `.env` file in the root directory of project as in `e
 
 To deploy in specific network:
 ```
-$ node scripts/deployAll.js <network>
+node scripts/deployAll.js <network>
 ```
 
 ## Scope
