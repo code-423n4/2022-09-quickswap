@@ -7,14 +7,8 @@
 - Starts September 26, 2022 20:00 UTC
 - Ends October 01, 2022 20:00 UTC
 
-<p align="center">
-  <a href="https://algebra.finance/"><img alt="Algebra" src="logo.svg" width="360"></a>
-</p>
-
- <p align="center">
- <a href="https://github.com/code-423n4/2022-09-quickswap/actions/workflows/tests.yml"><img alt="Tests status" src="https://github.com/code-423n4/2022-09-quickswap/actions/workflows/tests.yml/badge.svg"></a>
-  <a href="https://github.com/code-423n4/2022-09-quickswap/actions/workflows/echidna.yml"><img alt="Echidna status" src="https://github.com/code-423n4/2022-09-quickswap/actions/workflows/echidna.yml/badge.svg"></a>
-</p>
+[![Algebra Finance](logo.svg)](https://algebra.finance)
+[![Tests status](https://github.com/code-423n4/2022-09-quickswap/actions/workflows/tests.yml/badge.svg)](https://github.com/code-423n4/2022-09-quickswap/actions/workflows/tests.yml) [![Echidna status](https://github.com/code-423n4/2022-09-quickswap/actions/workflows/echidna.yml/badge.svg)](https://github.com/code-423n4/2022-09-quickswap/actions/workflows/echidna.yml)
 
 ## Overview
 
