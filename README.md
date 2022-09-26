@@ -42,7 +42,7 @@ Each pool records and stores data that provides the ability to obtain a time-wei
 
 ### Build
 
-*Requires npm >= 8.0.0*
+**Requires npm >= 8.0.0**
 
 To install dependencies, you need to run the command in the root directory:
 ```
@@ -72,6 +72,11 @@ To get a test coverage, you need to run the following command in the src/core fo
 ```
 npm run coverage
 ```
+
+### Slither
+
+Please note that Slither <= 0.8.3 [contains a bug](https://github.com/crytic/slither/issues/1281) that interferes with the analysis of some contracts in the repository. Most likely, until the 0.8.4 slither is released, it will not be possible to analyze [src/core/contracts/AlgebraPool.sol](https://github.com/code-423n4/2022-09-quickswap/blob/main/src/core/contracts/AlgebraPool.sol). If necessary, you can try to use the dev version of Slither.
+
 
 ### Deploy
 Firstly you need to create `.env` file in the root directory of project as in `env.example`.
