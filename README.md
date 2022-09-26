@@ -34,11 +34,31 @@ Each pool records and stores data that provides the ability to obtain a time-wei
 
 ## Building and Testing
  
+- [Setup in one-line](#Setup-in-one-line)
 - [Build](#Build)
 - [Tests](#Tests)
 - [Coverage](#Tests-coverage)
 - [Deploy](#Deploy)
 
+### Setup in one-line
+
+**Requires npm >= 8.0.0**
+
+You can quickly clone a repository and install and run tests with:
+
+```
+git clone https://github.com/code-423n4/2022-09-quickswap
+```
+
+```
+cd 2022-09-quickswap
+```
+
+```
+npm run bootstrap && cd src/core && npm run compile && npm run test
+```
+
+If necessary, these steps are described in more detail below.
 
 ### Build
 
@@ -52,7 +72,7 @@ This will download and install dependencies and set up husky hooks.
 
 
 
-To compile, you need to run the following command in the src/core folder:
+To compile, you need to run the following command in the `src/core` folder:
 ```
 npm run compile
 ```
@@ -60,14 +80,14 @@ npm run compile
 
 ### Tests
 
-Tests are run by the following command in the src/core folder:
+Tests are run by the following command in the `src/core` folder:
 ```
 npm run test
 ```
 
 ### Tests coverage
 
-To get a test coverage, you need to run the following command in the src/core folder:
+To get a test coverage, you need to run the following command in the `src/core` folder:
 
 ```
 npm run coverage
@@ -75,7 +95,7 @@ npm run coverage
 
 ### Slither
 
-Please note that Slither <= 0.8.3 [contains a bug](https://github.com/crytic/slither/issues/1281) that interferes with the analysis of some contracts in the repository. Most likely, until the 0.8.4 slither is released, it will not be possible to analyze [src/core/contracts/AlgebraPool.sol](https://github.com/code-423n4/2022-09-quickswap/blob/main/src/core/contracts/AlgebraPool.sol). If necessary, you can try to use the dev version of Slither.
+Please note that Slither <= 0.8.3 [contains a bug](https://github.com/crytic/slither/issues/1281) that interferes with the analysis of some contracts in the repository. Most likely, until the 0.8.4 slither is released, it will not be possible to analyze [src/core/contracts/DataStorageOperator.sol](https://github.com/code-423n4/2022-09-quickswap/blob/main/src/core/contracts/DataStorageOperator.sol). If necessary, you can try to use the dev version of Slither.
 
 
 ### Deploy
