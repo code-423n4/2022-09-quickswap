@@ -107,14 +107,17 @@ node scripts/deployAll.js <network>
 ```
 
 ## Scope
+
+Contracts in scope:
 |File|SLOC|Coverage|
 |:-|:-:|:-:|
-|_Contracts (10)_|
+|_Contracts (11)_|
 |[src/core/contracts/AlgebraFactory.sol](https://github.com/code-423n4/2022-09-quickswap/blob/main/src/core/contracts/AlgebraFactory.sol)|83|100%|
 |[src/core/contracts/AlgebraPool.sol](https://github.com/code-423n4/2022-09-quickswap/blob/main/src/core/contracts/AlgebraPool.sol)|789|100%|
 |[src/core/contracts/AlgebraPoolDeployer.sol](https://github.com/code-423n4/2022-09-quickswap/blob/main/src/core/contracts/AlgebraPoolDeployer.sol)|40|100%|
 |[src/core/contracts/DataStorageOperator.sol](https://github.com/code-423n4/2022-09-quickswap/blob/main/src/core/contracts/DataStorageOperator.sol)|127|96.55%|
 |[src/core/contracts/libraries/AdaptiveFee.sol](https://github.com/code-423n4/2022-09-quickswap/blob/main/src/core/contracts/libraries/AdaptiveFee.sol)|74|97.37%|
+|[src/core/contracts/libraries/Constants.sol](https://github.com/code-423n4/2022-09-quickswap/blob/main/src/core/contracts/libraries/Constants.sol)|16|100%|
 |[src/core/contracts/libraries/DataStorage.sol](https://github.com/code-423n4/2022-09-quickswap/blob/main/src/core/contracts/libraries/DataStorage.sol)|271|94.29%|
 |[src/core/contracts/libraries/PriceMovementMath.sol](https://github.com/code-423n4/2022-09-quickswap/blob/main/src/core/contracts/libraries/PriceMovementMath.sol)|143|98.11%|
 |[src/core/contracts/libraries/TickManager.sol](https://github.com/code-423n4/2022-09-quickswap/blob/main/src/core/contracts/libraries/TickManager.sol)|95|100%|
@@ -123,7 +126,16 @@ node scripts/deployAll.js <network>
 |_Abstracts (2)_|
 |[src/core/contracts/base/PoolImmutables.sol](https://github.com/code-423n4/2022-09-quickswap/blob/main/src/core/contracts/base/PoolImmutables.sol)|19|-|
 [src/core/contracts/base/PoolState.sol](https://github.com/code-423n4/2022-09-quickswap/blob/main/src/core/contracts/base/PoolState.sol)|32|-|
-|Total (over 12 files):|1817|98.86%|
+|Total (over 13 files):|1833|98.86%|
+
+
+**The rest of the contracts are not in the scope**. 
+
+Interfaces not included in the scope.
+
+Contracts in the `src/core/test` folder not included in the scope.
+
+Libraries not listed are not included in the scope.
 
 ## Contracts purpose
 
