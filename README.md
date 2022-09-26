@@ -11,6 +11,11 @@
   <a href="https://algebra.finance/"><img alt="Algebra" src="logo.svg" width="360"></a>
 </p>
 
+ <p align="center">
+ <a href="https://github.com/code-423n4/2022-09-quickswap/actions/workflows/tests.yml"><img alt="Tests status" src="https://github.com/code-423n4/2022-09-quickswap/actions/workflows/tests.yml/badge.svg"></a>
+  <a href="https://github.com/code-423n4/2022-09-quickswap/actions/workflows/echidna.yml"><img alt="Echidna status" src="https://github.com/code-423n4/2022-09-quickswap/actions/workflows/echidna.yml/badge.svg"></a>
+</p>
+
 ## Overview
 
 Algebra is an innovative DEX engine with concentrated liquidity, dynamic fees, farmings and other features. The work of AMM is based on the most common approach with an invariant described by a constant product function ( `x*y = k` like) but with significant changes. By dividing the price interval into segments, users are given the opportunity to place liquidity on a limited range of prices, which allows them to multiply the depth of liquidity and the efficiency of capital use. At the same time, Algebra DEX uses a dynamic fee mechanism - this allows us to respond to changing market conditions and ensure a balance between the interests of traders and liquidity providers.
