@@ -1,0 +1,761 @@
+==============================================================
+Guild: Code4rena
+Channel: ARCHIVE-2022 / quickswap-sept26
+==============================================================
+
+[09/26/2022 11:56] kartoonjoy (pinned)
+👋 Hello and welcome to the contest channel for the $50K USDC **QuickSwap and StellaSwap** contest!
+
+📆 Contest opens 09/26/2022 20:00 (20:00 UTC) and runs through 10/01/2022 20:00 (20:00 UTC) (5 days).
+
+Please give a warm welcome to the QuickSwap and StellaSwap teams, particularly @Vladyan18 and @qcrsh, who will be available for questions either here in the channel or via DM.
+
+We'll be posting relevant links, documentation, etc. here, so if you intend to participate in this contest, consider enabling notifications for this channel. 🐺 ⏰
+
+Contest Page: https://code4rena.com/contests/2022-09-quickswap-and-stellaswap-contest
+
+{Embed}
+https://code4rena.com/contests/2022-09-quickswap-and-stellaswap-contest
+Code4rena QuickSwap and StellaSwap contest
+$50,000 USDC
+26 September 2022—1 October 2022
+Code4rena - ARCHIVE-2022 - quickswap-sept26 [1023924958046474320].txt_Files/C4-banner-7C19B.png
+
+{Reactions}
+👋 (14) 4739_Skeletor 
+
+[09/26/2022 11:56] kartoonjoy
+Pinned a message.
+
+
+[09/26/2022 12:49] yongkiws
+Go go go nice contest
+
+
+[09/26/2022 19:37] 0xharambe
+LFG
+
+
+[09/26/2022 20:15] bnke0x0
+https://tenor.com/view/grandma-floss-meme-awesome-gif-24797837
+
+{Embed}
+https://tenor.com/view/grandma-floss-meme-awesome-gif-24797837
+Code4rena - ARCHIVE-2022 - quickswap-sept26 [1023924958046474320].txt_Files/grandma-floss-FC82C.png
+
+{Reactions}
+😂 (3) 
+
+[09/26/2022 20:45] 0xsmartcontract
+i get this error when `npm run bootstrap`
+it won't work if your node version is greater than 14.0.0
+I wanted to inform the new ones
+```js
+npm ERR! notsup Required: {"npm":">=8.0.0","node":">=14.0.0"}
+```
+
+{Reactions}
+thankyou 
+
+[09/26/2022 21:11] ladboy233
+Uniswap V3?
+
+{Reactions}
+👍 
+
+[09/26/2022 23:44] carrotsmuggler
+is there any benefit to using create2 to create pool contracts over the normal method that uniswapv2 uses?
+
+
+[09/27/2022 00:22] neko_nyaa
+Security + gas reasons
+- Gas because hashing is much cheaper than storage read
+- Security because you can send tokens to the pair without it being created
+
+{Reactions}
+👍 
+
+[09/27/2022 00:25] carrotsmuggler
+i dont understand the gas savings? if i just deploy with `new AlgebraPool()` how is that using extra storage reads compared to `new AlgebraPool(salt:...)`
+
+
+[09/27/2022 00:25] carrotsmuggler
+ah nevermind for future access i get it
+
+
+[09/27/2022 00:26] carrotsmuggler
+thanks!
+
+
+[09/27/2022 00:27] neko_nyaa
+For uniswap v2, the function `getPair` for getting pair addresses is a pure function
+
+V2 peripheries (router and such) uses that a lot, so the gas-saving is quite meaningful
+
+{Reactions}
+👍 
+
+[09/27/2022 00:53] neko_nyaa
+I'm relatively new here. Is 1833 lines for 5 days normal or a bit more than usual?
+
+
+[09/27/2022 01:39] tofunmi
+Quickswap uses algebra 
+The audit page says quickswap and stellaswap
+
+
+[09/27/2022 01:42] tofunmi
+Is this the entire algebra codebase,  or new 
+If new,  is it a new Oracle system or what ??
+What is changing this time , new amm design or what @qcrsh @Vladyan18
+
+
+[09/27/2022 01:44] tofunmi
+Or more like new change to algebra and it is affecting quickswap and stellaswap
+
+
+[09/27/2022 01:46] 0xharambe
+new fee structure
+
+{Reactions}
+👍 
+
+[09/27/2022 09:10] trust90
+Just a friendly reminder to keep any information about bugs or their existence off chat until the contest ends. Thx!
+
+{Reactions}
+✅ 👆 (2) 
+
+[09/27/2022 09:15] tofunmi
+Anything others should know should also be made clear 
+C4 is one Big family 😂 😂
+
+{Reactions}
+💯 (6) 
+
+[09/27/2022 09:17] trust90
+Agreed tofu ⭐
+
+
+[09/27/2022 09:30] tofunmi
+Bro got my name wrong 😭
+
+{Reactions}
+😂 (13) 
+
+[09/27/2022 10:44] trust90
+Not wrong, just shorthand version 😁
+
+
+[09/27/2022 10:47] codingnamekiki
+shorthand food version
+
+
+[09/27/2022 13:12] 0xmatt#3768
+could be worse, could be Tofungmi
+
+{Reactions}
+😂 
+
+[09/27/2022 13:42] zzykxx
+anybody can explain how to visualize this in a conceptual way?
+
+{Attachments}
+Code4rena - ARCHIVE-2022 - quickswap-sept26 [1023924958046474320].txt_Files/f-21D1B.jpg
+
+{Reactions}
+thisisfine (5) ohno ⚰️ (3) 🧠 
+
+[09/27/2022 14:01] ladboy233
+I am not good at math. Let me try 🙂
+
+
+[09/27/2022 14:01] ladboy233
+🌟
+
+
+[09/27/2022 14:07] supernovahs
+tbh the docs could have been better
+
+{Reactions}
+💯 (5) 
+
+[09/27/2022 14:08] ladboy233
+https://uniswap.org/blog/uniswap-v3
+
+{Embed}
+https://uniswap.org/blog/uniswap-v3
+Introducing Uniswap V3
+All about Uniswap V3.
+Code4rena - ARCHIVE-2022 - quickswap-sept26 [1023924958046474320].txt_Files/banner-E64C1.png
+
+
+[09/27/2022 14:35] 0xharambe
+Plug this into wolfram alpha
+
+
+[09/27/2022 14:35] 0xharambe
+And then share the link :kekw:
+
+
+[09/27/2022 15:12] trust90
+in left hand side, the higher the volatility, the larger the fee multiplier. In the right hand side, the more an asset pair is used (intensity), the higher the total fee. The low and high of the functions are capped and the growth of each side looks like a sigmoid, wikipedia has a good article on that.
+
+{Reactions}
+💯 (6) 🦸 (3) 
+
+[09/27/2022 15:12] trust90
+It's a lot of math to model a very simple idea
+
+
+[09/27/2022 15:14] ladboy233
+👏
+
+
+[09/27/2022 15:14] ladboy233
+💯
+
+
+[09/27/2022 18:21] ch_301
+is this site work?
+https://docs.algebra.finance/docs/intro
+
+{Embed}
+https://docs.algebra.finance/docs/intro
+Overview | Algebra docs
+Innovative DEX with concentrated liquidity, adaptive fee, build-in farming etc.
+
+
+[09/27/2022 18:25] 0xsorrynotsorry
+Yeah, it works
+
+{Reactions}
+thankyou 
+
+[09/27/2022 18:28] haruxe
+It's interesting seeing the SafeMath library again, haven't seen it used for a while due to solidity 0.8.0 :OkayChamp:
+
+{Reactions}
+☝️ (2) 
+
+[09/27/2022 21:57] raymondfam
+When comparing the sizes of two addresses, tokenA < tokenB, what is it based on? The hexadecimal values, or something else? If it's based on hexadecimal value, is there any tool we can use to determine that? Thanks
+
+
+[09/27/2022 23:01] tofunmi
+The hex value of course,  For determining the order in the mapping I guess
+Maths doesn't lie
+Eg Usdc address converted to converted to decimal is 9175510.......5704 
+Addresses are just values too right ??
+
+{Reactions}
+👍 
+
+[09/27/2022 23:15] raymondfam
+Great. Makes sense now.
+
+
+[09/28/2022 09:28] slightscan
+function in a function 🔁
+https://github.com/code-423n4/2022-09-quickswap/blob/main/src/core/contracts/libraries/PriceMovementMath.sol/#L153
+
+{Reactions}
+👍 (3) 
+
+[09/28/2022 10:34] trust90
+That's the mathiest contest I've seen in a long time, grats devs.
+
+{Reactions}
+👍 (5) 
+
+[09/28/2022 12:13] supernovahs
+What are the main contracts or library we need to focus?
+
+
+[09/28/2022 12:14] supernovahs
+Data storage is definitely one
+
+
+[09/28/2022 12:23] Franfran#5067
+How similar is the codebase to Uniswap v3 ?
+
+{Reactions}
+☝️ 
+
+[09/28/2022 12:24] 0xdanielh
+I think AlgebraPool is definitely one of them
+
+{Reactions}
+👍 
+
+[09/28/2022 12:27] jeiwan
+Looks like a Uniswap V3 fork rewritten to avoid licensing issues lol
+
+
+[09/28/2022 12:27] Franfran#5067
+ah is it ? ahahaha
+
+
+[09/28/2022 12:28] jeiwan
+Even the tests are copy pasted
+
+
+[09/28/2022 12:29] jeiwan
+Most of the code is Uni v3 written in a different way 😂  As if they tried to write Uni v3 without writing Uni v3
+
+
+[09/28/2022 12:31] jeiwan
+And a lot of renames 😂  The same stuff but named differently, e.g. TickBitmap became TickTable but it does the exactly same thing.
+
+{Reactions}
+😂 (7) 
+
+[09/28/2022 12:37] jeiwan
+I don't know what to audit here. They took Uniswap V3, renamed all the functions, rewritten them, copy-pasted the entire test suits (including Echidna tests) so it keeps working. The only authentic thing seems to be the AdaptiveFee library and the DataStorage stuff (but maybe they're also copied from somewhere 🤷‍♂️)
+
+
+[09/28/2022 12:40] cloudellie
+@Jeiwan @Franfran this is a shared channel with the sponsor team. Questions about the contest are very welcome here, but please keep the discussion respectful, and be mindful of our community code of conduct (see #👉start-here). Thanks!
+
+{Reactions}
+💯 (5) 👆 (2) 
+
+[09/28/2022 13:30] supernovahs
+I am skipping this audit .Couldn't progress
+
+
+[09/28/2022 13:30] supernovahs
+Hope u guys figure it out
+
+
+[09/28/2022 13:42] Franfran#5067
+Was asking seriously, what kind of areas should we focus on ?
+
+
+[09/28/2022 13:45] indijanc7
+Areas to focus on are written in the description of the contest https://code4rena.com/contests/2022-09-quickswap-and-stellaswap-contest
+
+{Embed}
+https://code4rena.com/contests/2022-09-quickswap-and-stellaswap-contest
+Code4rena QuickSwap and StellaSwap contest
+$50,000 USDC
+26 September 2022—1 October 2022
+Code4rena - ARCHIVE-2022 - quickswap-sept26 [1023924958046474320].txt_Files/7af1ef65-6a24-4383-973d-63247f3639a6-20D03
+
+
+[09/28/2022 14:02] leo_sch_
+Is there any gas report to base it on, I haven't managed to find or generate one yet ?
+
+
+[09/28/2022 16:17] shr1ftyy
+Lmfao
+
+
+[09/28/2022 16:40] sockdrawermoney
+@Jeiwan @shr1ftyy @Franfran I'm going to double down on @CloudEllie's point and make it clear that comments about projects should be professional and respectful of all parties.
+
+{Reactions}
+👍 
+
+[09/28/2022 16:41] Franfran#5067
+Really wasn't the aim... Just trying to understand what was different to know where to focus in order to have a greater chance to find vulns
+
+
+[09/28/2022 16:42] sockdrawermoney
+I do understand that and it's possible to do without coming across as laughing at the project or their choices.
+
+{Reactions}
+hi5 (3) 👍 (7) 
+
+[09/28/2022 16:43] sockdrawermoney
+I know there is absolutely no ill intent here, but we have a high bar for how we treat people and projects here.
+
+
+[09/28/2022 21:10] ladboy233
+https://github.com/code-423n4/2022-09-quickswap/blob/15ea643c85ed936a92d2676a7aabf739b210af39/src/core/contracts/AlgebraPool.sol#L580
+
+{Embed}
+https://github.com/code-423n4/2022-09-quickswap/blob/15ea643c85ed936a92d2676a7aabf739b210af39/src/core/contracts/AlgebraPool.sol
+2022-09-quickswap/AlgebraPool.sol at 15ea643c85ed936a92d2676a7aabf7...
+Contribute to code-423n4/2022-09-quickswap development by creating an account on GitHub.
+Code4rena - ARCHIVE-2022 - quickswap-sept26 [1023924958046474320].txt_Files/7af1ef65-6a24-4383-973d-63247f3639a6-20D03
+
+
+[09/28/2022 21:10] ladboy233
+```
+  function _swapCallback(
+    int256 amount0,
+    int256 amount1,
+    bytes calldata data
+  ) private {
+    IAlgebraSwapCallback(msg.sender).algebraSwapCallback(amount0, amount1, data);
+  }
+```
+
+
+[09/28/2022 21:11] ladboy233
+what is this function doing?
+
+
+[09/28/2022 21:11] ladboy233
+what does this function suppose to do?
+
+
+[09/28/2022 21:12] b353n
+Callback to receiver. If is contract you can do many thinks.
+
+
+[09/28/2022 21:19] haruxe
+it allows contracts to be able to react to the event
+
+
+[09/28/2022 21:19] haruxe
+however it wishes to handle it
+
+
+[09/28/2022 21:22] trustminimised
+The intention in context seems to be to implement the actual transfer of tokens in the swap, as the contract immediately `require`s that the balances have changed by the corresponding amounts in `swap`.
+There are similar callbacks elsewhere in `AlgebraPool`. The use of callbacks like this seems to be a uniswap-ism from V3.
+
+
+[09/29/2022 07:11] johnnytime
+Exactly, also the code was audited by 3 auditing companies…
+
+
+[09/29/2022 07:50] Aeros#7185
+Uniswap V3, or Quickswap?
+
+
+[09/29/2022 08:18] johnnytime
+Algebra
+
+
+[09/29/2022 10:14] 0xmatt#3768
+This video has a very useful Uniswap v3 codebase walkthrough. It's easy to see the divergences by following the walkthrough with the Algebra codebase. Those unsure what to focus on might find divergences and possible edge cases a good place to look: https://www.youtube.com/watch?v=WCLsIcjLSXc
+
+{Embed}
+EatTheBlocks
+https://www.youtube.com/watch?v=WCLsIcjLSXc
+Developer walks you through the code of Uniswap V3
+SMART CONTRACT AUDITS
+👉Unblock Labs: https://bit.ly/3nlREUo
+
+FREE TRAININGS
+👉 How to find your first 6-Figures Blockchain Developer Job: https://bit.ly/390ebTq
+👉 Learn how to create Profitable Flashloans:  https://bit.ly/3mqP6nq
+
+CREATE YOUR OWN TOKEN (NO-CODE)
+👉Token Maker: https://bit.ly/3by1yzy
+
+LIVE TRAINING ON UNISWAP V3
+👉  Book your seat h...
+Code4rena - ARCHIVE-2022 - quickswap-sept26 [1023924958046474320].txt_Files/sddefault-C7301.jpg
+
+{Reactions}
+👍 (5) 
+
+[09/29/2022 10:16] 0xmatt#3768
+I find because of the Uniswap elements it's taken me a lot longer to get my head around the codebase. But also studying Uniswap is on my learning list and I'll keep coming back to this codebase after the audit as a template for related implementations.
+
+
+[09/29/2022 12:16] 0xa5df
+I found also the Uniswap V3 whitepaper very useful, however it'll take some time to read it
+https://uniswap.org/whitepaper-v3.pdf
+
+{Reactions}
+❤️ (5) 
+
+[09/29/2022 14:22] 0xmatt#3768
+Yeah half of this audit for me is turning it into a case study on Uniswap forks. I'll probably come back to it again and again. Really looking forward to the report to see what I miss and how I can improve.
+
+
+[09/30/2022 02:12] _oceansky
+Still noob in developer's space, did the uniswap v3 is under business license for 2 years and should not be subject for forks?
+
+
+[09/30/2022 05:07] csanuragjain
+@Vladyan18  @qcrsh I have some doubts, whom can I ping?
+
+
+[09/30/2022 06:42] qcrsh
+Hi, you can dm me
+
+
+[09/30/2022 06:45] csanuragjain
+Thanks messaged
+
+
+[09/30/2022 17:32] acegawd
+@qcrsh Dmed you.
+
+
+[09/30/2022 19:32] cryptphi
+hello, any quickswap sponsor online I can chat with in DM? I got a question for clarification please
+
+
+[09/30/2022 19:51] itsmetechjay
+@Vladyan18 @qcrsh either of you around?
+
+
+[09/30/2022 20:00] qcrsh
+Hi, you can dm me
+
+
+[09/30/2022 20:15] pedr02b2
+got me on this one, did make me go deep dive into uniswap and assembly mind you, thanks for the opportunity to work on your project
+
+{Reactions}
+🚀 (4) 💯 
+
+[10/01/2022 16:00] minh___
+how do I run only specific tests? running the whole suit takes too long and I want to console log at certain points
+
+
+[10/01/2022 16:36] devabdee
+```Npx hardhat test --grep "<Test message>"```
+
+{Reactions}
+👍 (2) 
+
+[10/01/2022 16:37] minh___
+thanks, appreciate it! 🙂
+
+{Reactions}
+🤙🏻 
+
+[10/01/2022 18:08] d3e4
+What is the purpose of lteConsideringOverflow? What overflow, and why compare with currentTime?
+
+
+[10/01/2022 19:59] Franfran#5067
+gg all
+
+
+[10/01/2022 19:59] codingnamekiki
+:legalchicken:
+
+
+[10/01/2022 20:02] C4
+**🚨 CONTEST ALERT**
+
+@🐺wardens The **QuickSwap and StellaSwap** contest is now closed! Huge thanks to everyone who participated 🔍, whether you submitted a finding or not.
+
+What's next: The sponsor team and judge will review the findings over the next couple of weeks. Keep an eye on #📢announcements for regular updates on how the contest is progressing through awarding 🤑🏆, judging 🧑‍⚖️ and reporting 📜. Feel free to ping a gardener if you have questions along the way!
+
+{Reactions}
+C4Keycap (10) 
+
+[10/01/2022 20:04] Quisex#4394
+Let’s go !! My first contest on the platform
+
+{Reactions}
+🔥 (13) hi5 
+
+[10/01/2022 20:26] ladboy233
+👍
+
+
+[10/02/2022 01:08] haruxe
+:clap: :chadtalik:
+
+
+[10/04/2022 17:12] Quisex#4394
+Anybody know how long it takes to here back 2 weeks ?
+
+
+[10/04/2022 18:43] rotcivegaf
+Minimum a month
+
+
+[10/27/2022 04:43] TurnipBoy#5973
+https://github.com/code-423n4/code423n4.com/pull/4629
+
+{Embed}
+https://github.com/code-423n4/code423n4.com/pull/4629
+Add Quickswap to Leaderboard by liveactionllama · Pull Request #462...
+Code4rena - ARCHIVE-2022 - quickswap-sept26 [1023924958046474320].txt_Files/4629-70D61
+
+{Reactions}
+🙏 (4) 
+
+[10/27/2022 04:53] neko_nyaa
+Nice. Looks like I can finally apply for backstage
+
+{Reactions}
+👏 (2) 
+
+[10/27/2022 08:14] _oceansky
+Thank you! 😃
+
+
+[10/27/2022 19:21] liveactionllamac4
+🤑 🎉  Awards for **Quickswap and StellaSwap**:
+
+$11,445.67 USDC » @0x52 
+$8,310.11 USDC » @Jeiwan 
+$4,936.22 USDC » @cccz 
+$4,186.23 USDC » @Roman 
+$3,335.25 USDC » @__141345__ 
+$2,718.67 USDC » @rbserver 
+$1,799.53 USDC » @Deleted User 
+$1,516.94 USDC » @Chom 
+$910.47 USDC » @imare 
+$875.90 USDC » @Bernd 
+$627.09 USDC » @0xbepresent 
+$593.27 USDC » @8olidity 
+$593.27 USDC » @slightscan 
+$586.05 USDC » @0xNazgul 
+$466.16 USDC » @0xSmartContract 
+$442.91 USDC » @IllIllI 
+$396.26 USDC » @brgltd 
+$329.64 USDC » @Kiki 
+$323.93 USDC » @Kaden 
+$175.88 USDC » RockingMiles (@robee & @pants)
+$150.82 USDC » @Rolezn 
+$150.81 USDC » @Deivitto 
+$141.06 USDC » @c3phas 
+$124.68 USDC » @trustminimised 
+$111.57 USDC » @0xladboy | Sparkware 
+$111.54 USDC » @cryptonue 
+$111.54 USDC » @0xmatt 
+$97.36 USDC » @Bnke 
+$92.36 USDC » @code-cipher 
+$88.95 USDC » @ajtra 
+$87.52 USDC » @catchup 
+$87.52 USDC » @rvierdiiev 
+$85.91 USDC » @delfin454000 
+$83.99 USDC » @RaymondFam 
+$82.18 USDC » @DefSec 
+$80.86 USDC » @aysha 
+$80.78 USDC » @0x1f8b 
+$80.14 USDC » @slowmoses
+$79.08 USDC » mics
+$78.53 USDC » @thinklab 
+$78.45 USDC » @Tomo | NinjAudit 
+$77.63 USDC » @martin | Founder @ ShieldifySec 
+$77.33 USDC » @Santiago Moreno 
+$76.61 USDC » Shinchan (@Sm4rty, @Prasant Gupta, & @Rohan)
+$76.56 USDC » V_B (@Barichek & vlad_bochok)
+$76.28 USDC » @JC 
+$76.09 USDC » @gogo 
+$76.09 USDC » @bulej93
+$76.09 USDC » @Rotcivegaf 
+$76.09 USDC » @Mukund 
+$76.08 USDC » @EricTee 
+$76.06 USDC » @lukris02 
+$76.06 USDC » @durianSausage 
+$76.06 USDC » @Ruhum 
+$76.05 USDC » @Aeros 
+$76.05 USDC » @tnevler 
+$76.05 USDC » @Waze 
+$76.05 USDC » @Sloth 
+$76.05 USDC » @karanctf 
+$76.05 USDC » @Natzuu 
+$76.05 USDC » @olivierdem 
+$53.31 USDC » @sikorico 
+$52.54 USDC » @chrisdior4 
+$52.21 USDC » @lucyoa 
+$52.07 USDC » @a12jmx 
+$52.04 USDC » @sorryNotsorry 
+$52.04 USDC » @Matin 
+$52.04 USDC » @cryptphi 
+$52.04 USDC » @d3e4 
+$52.04 USDC » @DimitarDimitrov 
+$52.04 USDC » @Ocean_Sky 
+$52.04 USDC » @p_crypt0 
+$52.04 USDC » @pedr02b2 
+$52.04 USDC » @Satyam_Sharma
+$52.04 USDC » @mahdikarimi 
+$52.04 USDC » @carrotsmuggler 
+$52.04 USDC » @Migue 
+$52.04 USDC » Trabajo_de_mates (@vnmrtz.eth & @rafatatay)
+$47.45 USDC » @ReyAdmirado 
+$35.48 USDC » @Shanmuga_Bharathi 
+$35.48 USDC » @minhtrng 
+$35.48 USDC » @neko_nyaaaaaaaaaaaaaaaaaaaaaaaaa 
+$35.48 USDC » @s3cunDa 
+$35.48 USDC » @Trust 
+$29.85 USDC » @ch0bu 
+$25.78 USDC » @TomJ 
+$25.13 USDC » @ChristianKuri
+$24.90 USDC » @B2 
+$24.72 USDC » @zishansami 
+$24.47 USDC » @Awesome 
+$24.38 USDC » @beardofginger 
+$24.22 USDC » @saian 
+$24.16 USDC » @SnowMan 
+$24.05 USDC » @HardlyCodeMan 
+$24.03 USDC » @m_Rassska 
+$24.03 USDC » @ret2basic.eth 
+$24.02 USDC » @dharma09 
+$24.02 USDC » @Tomio 
+$24.02 USDC » @vnmrtz.eth 
+$24.02 USDC » @emrekocak 
+$24.02 USDC » @bobirichman7542
+
+
+[10/27/2022 19:21] liveactionllamac4
+$24.02 USDC » @Diraco 
+$24.02 USDC » @francoHacker 
+$24.02 USDC » @medikko 
+$24.02 USDC » @Noah3o6 
+$24.02 USDC » @peiw 
+$24.02 USDC » @0xRoxas 
+$24.02 USDC » @Amithuddar 
+$24.02 USDC » @Fitraldys 
+$24.02 USDC » @0x5rings 
+$24.02 USDC » @gianganhnguyen 
+$24.02 USDC » @shark 
+$24.02 USDC » @zeesaw 
+
+🏁 Findings summary
+
+High risk findings: 2 total, 1 unique
+Med risk findings: 41 total, 12 unique
+Gas optimizations: 80
+QA reports: 72
+
+Awards will be distributed on Polygon within the next 1-2 weeks.  Congratulations all!  💸 💸 💸
+
+*Note: If you participated in this contest and don’t see your name on this list, please wait until the report is published and the findings repo is made public to check on your submissions.*
+
+{Reactions}
+C4Keycap (17) 🎉 (5) hi5 
+
+[10/27/2022 19:34] franco_btc
+thanks ...
+
+{Reactions}
+C4Keycap (2) 
+
+[10/27/2022 20:22] chaduke3730
+Congrtas to first time winners!
+
+{Reactions}
+hi5 (4) 
+
+[10/27/2022 20:23] chaduke3730
+And to all
+
+
+[11/19/2022 15:54] mukund_rana
+Hey everyone this is my first contest and i also got awarded.Did anyone got  payment?
+
+
+[11/19/2022 15:54] mukund_rana
+Or its not been paid yet
+
+
+[11/19/2022 16:03] ch0bu
+Make sure that you add Polygon network to your Metamask (if you are using Metamask), and add USDC token. Here is how to do it: https://academy.binance.com/en/articles/how-to-add-polygon-to-metamask
+
+{Embed}
+https://academy.binance.com/en/articles/how-to-add-polygon-to-metamask
+How to Add Polygon to MetaMask? | Binance Academy
+Connect Polygon to your MetaMask browser extension crypto wallet with a custom RPC, network name, chain ID, and cryptocurrency symbol.
+Code4rena - ARCHIVE-2022 - quickswap-sept26 [1023924958046474320].txt_Files/182d3aaa8c9446f0922971a447a0f818-2E4CB.png
+
+
+==============================================================
+Exported 112 message(s)
+==============================================================
